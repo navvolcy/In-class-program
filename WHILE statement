@@ -1,0 +1,15 @@
+def print_menu():
+    print("Welcome to Oregon trail! select an Option!")
+    print("1 - Travel the Trail")
+    print("2 - learn about the Trail")
+    print("3 - Exit")
+    return input("> ")
+
+user_input = print_menu
+
+while user_input != "3":
+    #launch game/trail info
+    print(f"You selected {user_input}")
+    if user_input == "1":
+        play_game()
+    user_input = print_menu()
